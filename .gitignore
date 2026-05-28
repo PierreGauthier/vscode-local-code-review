@@ -1,0 +1,6 @@
+extension/out/
+extension/node_modules/
+mcp/__pycache__/
+mcp/*.pyc
+.vscode/code-review.json
+.vscode/code-review.json.tmp
