@@ -326,12 +326,6 @@ def resolve_comment(
         return f"Commentaire '{comment_id}' introuvable sur `{file_path}`."
 
     c = matches[0]
-    if c["author"] != "ai":
-        return (
-            f"Cannot resolve '{comment_id}': it belongs to '{c['author']}' (the human). "
-            "Only the human can resolve their own comments from VS Code."
-        )
-
     if c["status"] == "resolved":
         return f"Commentaire '{comment_id}' est déjà résolu."
 

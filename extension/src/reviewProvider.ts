@@ -37,13 +37,6 @@ export class ReviewProvider implements vscode.TreeDataProvider<ReviewTreeItem> {
     refresh(): void {
         this._onDidChangeTreeData.fire();
         this.updateProgress();
-        setTimeout(() => {
-            const editor = vscode.window.activeTextEditor;
-            if (editor?.document.uri.scheme === 'file') {
-                const filePath = path.relative(this.workspaceRoot, editor.document.uri.fsPath);
-                this.revealFile(filePath);
-            }
-        }, 50);
     }
 
     revealFile(filePath: string): void {

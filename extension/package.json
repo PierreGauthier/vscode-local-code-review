@@ -1,9 +1,13 @@
 {
-  "name": "local-code-review",
-  "displayName": "Local Code Review",
+  "name": "workspace-code-review",
+  "displayName": "Workspace Code Review",
   "description": "Local code review with MCP server support for AI assistants",
   "version": "0.1.0",
-  "publisher": "local",
+  "publisher": "PierreGauthier",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PierreGauthier/vscode-local-code-review"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
